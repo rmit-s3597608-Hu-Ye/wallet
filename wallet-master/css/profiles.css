@@ -1,0 +1,25 @@
+.fileItem a {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fileItem {
+    height: 48px;
+}
+
+.fileItem > .flex-grow-1 {
+    overflow: hidden;
+}
+
+.fileItem:hover {
+    background-color: #fafafa;
+}
+
+.tripleDotBtn {
+    width: 40px!important;
+    height: 40px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    background-color: antiquewhite
+}

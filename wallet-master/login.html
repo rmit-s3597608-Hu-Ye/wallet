@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RMIT Wallet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/onBoarding.css" rel="stylesheet">
+    <style>
+        .login-form-container {
+            width: 100%;
+            max-width: 330px;
+            padding: 16px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+<div class="login-form-container text-center">
+    <img class="wallet-logo mb-4" src="images/wallet_logo.png" alt="RMIT Wallet">
+    <h1 class="mb-3 font-weight-normal text-light">RMIT WALLET</h1>
+    <form method="post" action="login.php" class="form-signin">
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="text" name="username" id="inputUsername" class="form-control mb-2" placeholder="Username or email" required autofocus>
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" minlength="8" maxlength="64" name="password" id="inputPassword" class="form-control mb-2" placeholder="Password" required>
+
+<!--        <div class="checkbox mb-3">
+            <label class="text-light">
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>-->
+
+        <button class="btn btn-success btn-block mb-2" type="submit">Sign in</button>
+    </form>
+
+    <div class="mb-4"><a class="text-light" href="forgotPassword.html">Forgot username/password</a></div>
+    <div><a class="text-light" href="register.html">Register</a></div>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2018 RMIT University</p>
+</div>
+
+</body>
+</html>

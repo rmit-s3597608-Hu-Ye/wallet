@@ -1,0 +1,97 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RMIT Wallet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/onBoarding.css" rel="stylesheet">
+
+    <style>
+        .page-container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin: auto;
+        }
+
+        @media (min-width: 576px) {
+            .page-container {
+                max-width: 540px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .page-container {
+                max-width: 720px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-container">
+    <div class="row">
+        <div class="col-md-5 mb-4 text-center text-md-right">
+            <img class="wallet-logo" src="images/wallet_logo.png" alt="RMIT Wallet">
+        </div>
+        <h1 class="col-md-7 mb-3 text-light text-center text-md-left align-self-center">RMIT WALLET</h1>
+    </div>
+
+    <form action="register.php" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" name="firstname" maxlength="40" class="form-control mb-2" placeholder="First Name" required autofocus>
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="lastname" maxlength="40" class="form-control mb-2" placeholder="Last Name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="email" name="email" maxlength="128" class="form-control mb-2" placeholder="Email" required autofocus>
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="username" maxlength="32" class="form-control mb-2" placeholder="Username" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="password" name="password" minlength="8" maxlength="64" class="form-control mb-2" placeholder="Password" required autofocus>
+            </div>
+            <div class="col-md-6">
+                <input type="password" name="passwordConfirm" minlength="8" maxlength="64" class="form-control mb-2" placeholder="Re-enter password" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <select name="question" required class="form-control mb-2">
+                    <option value="What is the name of your best childhood friend?">What is the name of your best childhood friend?</option>
+                    <option value="In what city or town was your first job?">In what city or town was your first job?</option>
+                    <option value="In what city or town did your parents meet?">In what city or town did your parents meet?</option>
+                    <option value="What was your childhood nickname?">What was your childhood nickname?</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <input name="answer" type="text" maxlength="64" class="form-control mb-2" placeholder="Your answer">
+            </div>
+        </div>
+
+        <button class="btn btn-success btn-block mb-2" type="submit">Register</button>
+    </form>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2018 RMIT University</p>
+</div>
+
+</body>
+</html>
